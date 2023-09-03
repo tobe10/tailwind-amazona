@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-
+const mongodbUri = process.env.MONGODB_URI;
 async function connect() {
     if (mongoose.connection.readyState === 0) {
-        await mongoose.connect('mongodb://127.0.0.1:27017/next-tailwind-amazona')
+        await mongoose.connect(mongodbUri)
             .then(() => console.log('Connected to database'))
             .catch((error) => console.error(error));
     } else {

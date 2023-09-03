@@ -14,6 +14,7 @@ export const convertDocToObject = (doc) => {
 }
 
 export default function Home({ products }) {
+
   const { state, dispatch } = useContext(Store)
 
   const addToCartHandler = async (product) => {
@@ -27,6 +28,7 @@ export default function Home({ products }) {
     }
     dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
   }
+
 
   return (
     <>
