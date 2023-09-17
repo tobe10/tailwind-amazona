@@ -46,6 +46,7 @@ export default NextAuth({
             }
         })
     ],
-    secret: "mysecret"
+    secret: "mysecret",
+    NEXTAUTH_URL: 'https://tailwind-amazon.vercel.app',
 
 })
