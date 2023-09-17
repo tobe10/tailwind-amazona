@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Store } from '@/utils/Store'
-import Layout from './components/Layout';
+import Layout from '@/components/Layout';
 import Link from 'next/link';
 import Image from 'next/image'
 import { useRouter } from 'next/router';

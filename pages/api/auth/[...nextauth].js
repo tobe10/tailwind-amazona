@@ -45,6 +45,7 @@ export default NextAuth({
                 throw new Error('Invalid email or password');
             }
         })
-    ]
+    ],
+    secret: "mysecret"
 
 })

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import Layout from './components/Layout'
+import Layout from '@/components/Layout'
 import { signIn, useSession } from 'next-auth/react'
 import { useForm } from 'react-hook-form'
 import { getError } from '@/utils/error'

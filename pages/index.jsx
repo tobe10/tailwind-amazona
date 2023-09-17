@@ -1,10 +1,12 @@
+
+
 import db from '@/utils/db'
-import Layout from './components/Layout'
-import ProductItem from './components/ProductItem'
+import Layout from '@/components/Layout'
 import Product from '@/models/Product'
+import axios from 'axios'
+import ProductItem from '@/components/ProductItem'
 import { useContext } from 'react'
 import { Store } from '@/utils/Store'
-import axios from 'axios'
 
 export const convertDocToObject = (doc) => {
   doc._id = doc._id.toString()

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
-import Layout from './components/Layout'
-import CheckoutWizard from './components/CheckoutWizard'
+import Layout from '@/components/Layout';
+import CheckoutWizard from '@/components/CheckoutWizard';
 import { useForm } from 'react-hook-form'
 import { Store } from '@/utils/Store';
 import Cookies from 'js-cookie';

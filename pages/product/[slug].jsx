@@ -2,7 +2,7 @@ import { Store } from '../../utils/Store';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useContext } from 'react'
-import Layout from '../components/Layout'
+import Layout from '@/components/Layout';
 import axios from 'axios';
 import db from '@/utils/db';
 import Product from '@/models/Product';
@@ -30,7 +30,7 @@ export default function ProductScreen({ product }) {
 
         const existItem = state.cart.cartItems.find(x => x.slug === product.slug)
         const quantity = existItem ? existItem.quantity + 1 : 1
-        
+
         // api call 
         const { data } = await axios.get(`/api/products/${product._id}`)
         if (data.countInStock < quantity) {

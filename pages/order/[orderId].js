@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Layout from "../components/Layout";
+import Layout from "@/components/Layout";
 import { useEffect, useReducer } from "react";
 import axios from "axios";
 import { getError } from "@/utils/error";
