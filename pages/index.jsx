@@ -8,6 +8,7 @@ import ProductItem from '@/components/ProductItem'
 import { useContext } from 'react'
 import { Store } from '@/utils/Store'
 
+
 export const convertDocToObject = (doc) => {
   doc._id = doc._id.toString()
   doc.createdAt = doc.createdAt.toString()

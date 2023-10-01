@@ -1,7 +1,7 @@
 
 // require('dotenv').config();
 const mongoose = require('mongoose');
-const mongodbUri = process.env.MONGODB_URI;
+const mongodbUri = "mongodb+srv://tobethebest:OVC9qoNsaqovBPM4@cluster0.d3rmryo.mongodb.net/next-tailwind-amazona?retryWrites=true&w=majority"
 async function connect() {
     if (mongoose.connection.readyState === 0) {
         await mongoose.connect(mongodbUri)

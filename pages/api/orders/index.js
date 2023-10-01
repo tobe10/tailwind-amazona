@@ -7,8 +7,8 @@ const handler = async (req, res) => {
     if (!session) {
         res.status(401).send('sign in required !')
     }
+
     const { user } = session;
-    console.log(user)
 
     db.connect();
     const newOrder = new Order({
